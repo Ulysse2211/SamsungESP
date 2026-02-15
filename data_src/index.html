@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Remote</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="list d-flex justify-content-between">
+                <button
+                    class="btn btn-small btn-power"
+                    code="E0E040BF"
+                    name="Power"
+                ></button>
+                <button
+                    class="btn btn-small btn-source"
+                    code="E0E0807F"
+                    name="Source"
+                ></button>
+            </div>
+
+            <div class="list">
+                <div class="numpad-grid">
+                    <button class="btn btn-small" code="E0E020DF">1</button>
+                    <button class="btn btn-small" code="E0E0A05F">2</button>
+                    <button class="btn btn-small" code="E0E0609F">3</button>
+                    <button class="btn btn-small" code="E0E010EF">4</button>
+                    <button class="btn btn-small" code="E0E0906F">5</button>
+                    <button class="btn btn-small" code="E0E050AF">6</button>
+                    <button class="btn btn-small" code="E0E030CF">7</button>
+                    <button class="btn btn-small" code="E0E0B04F">8</button>
+                    <button class="btn btn-small" code="E0E0708F">9</button>
+                    <span></span>
+                    <button class="btn btn-small" code="E0E08877">0</button>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="list d-flex justify-content-between align-items-center">
+                <div class="side-btns">
+                    <div
+                        class="d-flex inner justify-content-between align-items-center"
+                    >
+                        <button
+                            class="btn btn-add"
+                            code="E0E0E01F"
+                            name="Add Vol"
+                        ></button>
+                        <div>Vol</div>
+                        <button
+                            class="btn btn-minus"
+                            code="E0E0D02F"
+                            name="Minus Vol"
+                        ></button>
+                    </div>
+                </div>
+
+                <div class="center-btns">
+                    <button
+                        class="btn btn-aup btn-up"
+                        code="E0E006F9"
+                        name="Up"
+                    ></button>
+                    <button
+                        class="btn btn-aright btn-right"
+                        code="E0E046B9"
+                        name="Right"
+                    ></button>
+                    <button
+                        class="btn btn-adown btn-down"
+                        code="E0E08679"
+                        name="Down"
+                    ></button>
+                    <button
+                        class="btn btn-aleft btn-left"
+                        code="E0E0A659"
+                        name="Left"
+                    ></button>
+                    <button class="btn btn-enter" code="E0E016E9" name="Enter">
+                        OK
+                    </button>
+                </div>
+
+                <div class="side-btns">
+                    <div
+                        class="d-flex inner justify-content-between align-items-center"
+                    >
+                        <button
+                            class="btn btn-aup"
+                            code="E0E048B7"
+                            name="Channel Up"
+                        ></button>
+                        <div>ch</div>
+                        <button
+                            class="btn btn-adown"
+                            code="E0E008F7"
+                            name="Channel Down"
+                        ></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list d-flex justify-content-between">
+                <button
+                    class="btn btn-small btn-menu"
+                    code="E0E058A7"
+                    name="Menu"
+                ></button>
+                <button
+                    class="btn btn-small btn-guide"
+                    code="E0E0D629"
+                    name="Guide"
+                ></button>
+                <button
+                    class="btn btn-small btn-info"
+                    code="E0E0F807"
+                    name="Info"
+                ></button>
+            </div>
+
+            <div class="list d-flex justify-content-between">
+                <button
+                    class="btn btn-small btn-return"
+                    code="E0E01AE5"
+                    name="Return"
+                ></button>
+                <button
+                    class="btn btn-mute"
+                    code="E0E0F00F"
+                    name="Mute"
+                ></button>
+                <button
+                    class="btn btn-small btn-exit"
+                    code="E0E0B44B"
+                    name="Exit"
+                ></button>
+            </div>
+
+            <div class="list d-flex justify-content-between">
+                <button class="btn btn-small btn-red" code="E0E036C9">A</button>
+                <button class="btn btn-small btn-green" code="E0E028D7">
+                    B
+                </button>
+                <button class="btn btn-small btn-yellow" code="E0E0A857">
+                    C
+                </button>
+                <button class="btn btn-small btn-blue" code="E0E06897">
+                    D
+                </button>
+            </div>
+
+            <div
+                class="list d-flex justify-content-between flex-wrap"
+                style="gap: 5px"
+            >
+                <button
+                    class="btn btn-small btn-rew"
+                    code="E0E0A25D"
+                    name="Rewind"
+                ></button>
+                <button
+                    class="btn btn-small btn-play"
+                    code="E0E0E21D"
+                    name="Play"
+                ></button>
+                <button
+                    class="btn btn-small btn-stop"
+                    code="E0E0629D"
+                    name="Stop"
+                ></button>
+                <button
+                    class="btn btn-small btn-pause"
+                    code="E0E052AD"
+                    name="Pause"
+                ></button>
+                <button
+                    class="btn btn-small btn-ffw"
+                    code="E0E012ED"
+                    name="Fast Forward"
+                ></button>
+            </div>
+            <p id="msg">...</p>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
